@@ -1,7 +1,9 @@
-package com.jayce.xiaofeng_news;
+package com.jayce.xiaofeng_news.ui.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.jayce.xiaofeng_news.R;
 
 public class MainActivity extends AppCompatActivity {
 
