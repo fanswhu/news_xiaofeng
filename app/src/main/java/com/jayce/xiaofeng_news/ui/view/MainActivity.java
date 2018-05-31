@@ -42,12 +42,12 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void initDatas() {
         request(page);
-
     }
 
     private void request(int page) {
         RertrofitFactory.getGankService().getBenefit(page)
                 .subscribeOn(Schedulers.io())
+
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new BaseObserver<GankBean>() {
                     @Override
@@ -58,7 +58,6 @@ public class MainActivity extends BaseActivity {
                             SlideBean bean =new SlideBean(resultsBean.getUrl(),
                                     resultsBean.getWho(),1,resultsBean.getType());
                             list.add(bean);
-
                         }
                         adapter.notifyDataSetChanged();
                     }
