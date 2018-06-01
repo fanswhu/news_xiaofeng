@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import butterknife.ButterKnife;
 
 /**
- * Created by jayce on 2018/5/23.
+ * Created by jayce on 2018/5/23 jflgdslmgg;l;f;.
  */
 
 public abstract class BaseActivity  extends Activity {
