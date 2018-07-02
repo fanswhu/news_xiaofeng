@@ -47,7 +47,6 @@ public class MainActivity extends BaseActivity {
     private void request(int page) {
         RertrofitFactory.getGankService().getBenefit(page)
                 .subscribeOn(Schedulers.io())
-
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new BaseObserver<GankBean>() {
                     @Override
